@@ -1,0 +1,213 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>Telios</title>
+	<style type="text/css" media="screen">
+		body{
+			background-color: white;
+		}
+		p{
+			font-family: sans-serif;
+		}
+		li{
+			font-family: sans-serif;
+		}
+		#banner{
+			position: absolute;
+			height: 237px;
+			width: 600px;
+			left: 50%;
+			top: 30px;
+			margin-left: -300px;
+			z-index: -1;
+		}
+		#main{
+			background-color: gray;
+			opacity: .8;
+			
+			position: absolute;
+			height: 450px;
+			width: 800px;
+			left: 50%;
+			top: 220px;
+			margin-left: -400px;
+		}
+		.screen{
+			background-color: white;
+			opacity: .8;
+			
+			position: absolute;
+			height: 360px;
+			width: 750px;
+			left: 50%;
+			top: 5px;
+			margin-left: -395px;
+			
+			padding: 20px 20px 20px 20px;
+			overflow: hidden;
+		}
+		.button{
+			float: right;
+			display: block;
+			background-color: white;
+			position: relative;
+			height: 35px;
+			width: 125px;
+			
+			text-align: center;
+			margin-right: 15px;
+			
+			font-family: sans-serif;
+			line-height: 35px;
+		}
+		#nav{
+			position: absolute;
+			height: 40px;
+			width: 790;
+			left: 50%;
+			top: 405px;
+			margin-left: -395px;
+			
+		}
+		#calit2{
+			position: absolute;
+			height: 50px;
+			top: 340px;
+			left: 10px;
+			z-index: 1;
+			opacity: .5;
+		}
+		.item{
+			float: left;
+			display: block;
+		}
+	</style>
+	<script type="text/javascript" src="javascripts/jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.corners.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$('#main').corners("20px");
+			$('.screen').corners("15px");
+			$('.button').corners("bottom");
+			
+			$('#contact').hide();
+			$('#applications').hide();
+			
+			$('#homebutton').click(function(){
+				$('#contact').hide();
+				$('#applications').hide();
+				$('#home').fadeIn('slow');
+			}).mouseover(function(){
+				$('#homebutton').css({'background-color': '#37b6e4'});
+			}).mouseout(function(){
+				$('#homebutton').css({'background-color': '#ffffff'});
+			});
+			
+			$('#contactbutton').click(function(){
+				$('#home').hide();
+				$('#applications').hide();
+				$('#contact').fadeIn('slow');
+			}).mouseover(function(){
+				$('#contactbutton').css({'background-color': '#37b6e4'});
+			}).mouseout(function(){
+				$('#contactbutton').css({'background-color': '#ffffff'});
+			});
+			
+			$('#applicationsbutton').click(function(){
+				$('#home').hide();
+				$('#contact').hide();
+				$('#applications').fadeIn('slow');
+			}).mouseover(function(){
+				$('#applicationsbutton').css({'background-color': '#37b6e4'});
+			}).mouseout(function(){
+				$('#applicationsbutton').css({'background-color': '#ffffff'});
+			});
+			
+			$('#carousel').jcarousel();
+		});
+		
+
+	</script>
+</head>
+<body>
+
+<div id="banner">
+	<img src="images/teliosbanner.png" />
+</div>
+<div id="main">
+	<!--Calit2 Logo-->
+	<div id="calit2">
+		<img src="images/calit2.png" />
+	</div>
+	<!--Screens-->
+	<div class="screen" id="home">
+		<p>Calit2@UCI researchersare developing Telios(TelepresenceInteractive Operating System) 
+		-– a software package that transforms computers, laptops and personal computing devices 
+		into user-friendly, real-time teleconferencing and telemedicine tools. Because the system is 
+		constructed on the powerful Web 2.0 platform, it works with all architectures, including 
+		Windows, Linux and Mac, as well as Web-enabled cell phones.</p> 
+		
+		<p>Teliossupports full multimedia and rich graphical interfaces, and requires no configuration or 
+		software installation. It delivers video conferencing, instrument telemetry, data acquisition and 
+		control –- all in real time. Telios enables monitoring and control of remote devices, such as heart- 
+		rate monitors, blood pressure monitors, glucose monitors, weight scales, and motion sensors.</p>
+		 
+		<p>This next-generation system enables users to easily access advanced telepresence features. 
+		Calit2 researchers are developing several versions including TeliosConnect, TeliosHome and 
+		TeliosStandard. Each version is configured for different applications such as a medical cart,   
+		home entertainment system or portable videoconferencing.</p>
+	</div>
+	<div class="screen" id="contact">
+		<p>Telios Research Contacts: 
+			<ul>
+			<li>Mark Bachman, <a href="mailto:mbachman@uci.edu">mbachman@uci.edu</a></li>
+			<li>Paul Marc, <a href="mailto:pmarc@uci.edu">pmarc@uci.edu</a></li>
+			</ul>
+		</p>	
+	</div>
+	<div class="screen" id="applications">
+		
+		<div class="item" id="cart">
+		<h3>TeliosTeleCart</h3> 
+		<p>Medical cart with telepresenceunit, remote control camera, 
+		noise cancelling directional microphone option.
+		 
+		Preconfigured with TeliosConnect which enables secure high- 
+		quality video conferencing, remote monitoring and control of 
+		local devices. 
+		
+		Additional accessories can be added, including a 
+		dermascope, otoscope, stethoscope, and wireless devices.</p>
+		</div>
+		
+		<div class="item" id="box">
+		<h3>TeliosTeleBox</h3> 
+		<p>Set-top box provides telepresence, but looks and acts like a 
+		home entertainment unit. Preconfigured with TeliosHome, 
+		which enables secure high-quality video conferencing, 
+		mouse-free control, remote monitoring and remote control of 
+		local devices. It also provides access to regular TV, DVD, 
+		music and Internet access. 
+		
+		Additional accessories can be added, such as noise 
+		cancelling microphones, and wireless devices for monitoring.</p> 
+		</div>
+
+		<div class="item" id="anywhere">
+		<h3>TeliosAnywhere</h3> 
+		<p>Almost any modern laptop or WI-Fi-enabled PDA can run 
+		TeliosStandard without any special configuration or 
+		installation. Secure video conferencing and remote 
+		monitoring/control are immediately available for most 
+		portable computing devices.</p>
+		</div>
+	</div>
+	<!--End Screens-->
+	<div id="nav">
+		<div class="button" id="homebutton">Home</div>
+		<div class="button" id="contactbutton">Contact</div>
+		<div class="button" id="applicationsbutton">Applications</div>
+	<div>
+</div>
+</body>
+</html>
