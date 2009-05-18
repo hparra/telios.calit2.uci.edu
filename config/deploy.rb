@@ -18,3 +18,12 @@ set :git_enable_submodules, 1
 role :app, domain
 role :web, domain
 role :db,  domain, :primary => true
+
+namespace :deploy do
+  
+  desc "Restart Application (not really)"
+  task :restart, :roles => :app do
+    # does nothing
+  end
+  
+end
