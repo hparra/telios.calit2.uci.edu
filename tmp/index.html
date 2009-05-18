@@ -35,6 +35,9 @@
 			left: 50%;
 			top: 220px;
 			margin-left: -350px;
+			
+			-moz-border-radius: 20px;
+			-webkit-border-radius: 20px;
 		}
 		.screen{
 			background-color: white;
@@ -49,6 +52,9 @@
 			
 			padding: 20px 20px 20px 20px;
 			overflow: hidden;
+			
+			-moz-border-radius: 15px;
+			-webkit-border-radius: 15px;
 		}
 		.button{
 			float: right;
@@ -56,7 +62,7 @@
 			background-color: white;
 			position: relative;
 			height: 35px;
-			width: 125px;
+			width: 135px;
 			
 			text-align: center;
 			margin-right: 15px;
@@ -65,6 +71,7 @@
 			line-height: 35px;
 			
 			cursor: pointer;
+			-moz-border-radius: 0 0 5px 5px;
 		}
 		#nav{
 			position: absolute;
@@ -101,6 +108,8 @@
 			font-size: 14pt;
 			
 			cursor: pointer;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
 		}
 		#app_nav{
 			position: relative;
@@ -108,19 +117,22 @@
 			left: 0px;
 			width: 650px;
 			height: 40px;
+			margin-bottom: 10px;
 		}
 	</style>
 	<script type="text/javascript" src="javascripts/jquery-1.3.2.js"></script>
-	<script type="text/javascript" src="javascripts/jquery.corners.js"></script>
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){
+			/*
 			$('#main').corners("20px");
 			$('.screen').corners("15px");
 			$('.button').corners("bottom");
 			$('.app_button').corners();
+			*/
 			
 			$('#contact').hide();
 			$('#applications').hide();
+			
 			
 			$('#homebutton').click(function(){
 				$('#contact').hide();
@@ -170,11 +182,18 @@
 				$('#cart').hide();
 				$('#anywhere').slideDown();
 			});
-
+			
 		});
-		
-
 	</script>
+	
+	<!--[if IE 7]>
+		<style type="text/css" media="screen">
+			.screen{
+				height: 400px;
+				width: 690px;
+			}
+		</style>
+	<![endif]-->
 </head>
 <body>
 
@@ -189,15 +208,15 @@
 	<!--Screens-->
 	<div class="screen" id="home">
 		<p>Calit2@UCI researchers are developing Telios(Telepresence Interactive Operating System) 
-		-– a software package that transforms computers, laptops and personal computing devices 
+		– a software package that transforms computers, laptops and personal computing devices 
 		into user-friendly, real-time teleconferencing and telemedicine tools. Because the system is 
 		constructed on the powerful Web 2.0 platform, it works with all architectures, including 
 		Windows, Linux and Mac, as well as Web-enabled cell phones.</p> 
 		
 		<p>Telios supports full multimedia and rich graphical interfaces, and requires no configuration or 
 		software installation. It delivers video conferencing, instrument telemetry, data acquisition and 
-		control –- all in real time. Telios enables monitoring and control of remote devices, such as heart- 
-		rate monitors, blood pressure monitors, glucose monitors, weight scales, and motion sensors.</p>
+		control - all in real time. Telios enables monitoring and control of remote devices, such as heart-rate 
+		monitors, blood pressure monitors, glucose monitors, weight scales, and motion sensors.</p>
 		 
 		<p>This next-generation system enables users to easily access advanced telepresence features. 
 		Calit2 researchers are developing several versions including Telios Connect, Telios Home and 
@@ -224,8 +243,8 @@
 		<p>Medical cart with telepresence unit, remote control camera, 
 		noise cancelling directional microphone option.
 		 
-		Preconfigured with Telios Connect which enables secure high- 
-		quality video conferencing, remote monitoring and control of 
+		Preconfigured with Telios Connect which enables secure high-quality 
+		video conferencing, remote monitoring and control of 
 		local devices. 
 		
 		Additional accessories can be added, including a 
