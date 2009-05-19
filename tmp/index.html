@@ -121,14 +121,9 @@
 		}
 	</style>
 	<script type="text/javascript" src="javascripts/jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="javascripts/pngfix.js"></script>
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){
-			/*
-			$('#main').corners("20px");
-			$('.screen').corners("15px");
-			$('.button').corners("bottom");
-			$('.app_button').corners();
-			*/
 			
 			$('#contact').hide();
 			$('#applications').hide();
@@ -186,13 +181,16 @@
 		});
 	</script>
 	
-	<!--[if IE 7]>
+	<!--[if gte IE 5]>
 		<style type="text/css" media="screen">
 			.screen{
 				height: 400px;
 				width: 690px;
 			}
 		</style>
+	<![endif]-->
+	<!--[if lt IE 7.]>
+	<script defer type="text/javascript" src="pngfix.js"></script>
 	<![endif]-->
 </head>
 <body>
