@@ -1,0 +1,67 @@
+body {
+	background-color: white;
+	background-image: url('http://marco.calit2.uci.edu/assets/telios.calit2.uci.edu/images/bgbottom.jpg');
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: bottom;
+}
+
+h2 {
+	font-family: arial;
+}
+
+p {
+	font-family: sans-serif;
+}
+
+li {
+	font-family: sans-serif;
+}
+
+#banner {
+	position: absolute;
+	width: 600px;
+	left: 50%;
+	top: 30px;
+	margin-left: -300px;
+	z-index: -1;
+}
+
+#main {
+	position: absolute;
+	width: 700px;
+	left: 50%;
+	top: 220px;
+	margin-left: -370px;
+}
+
+.screen {
+	background-color: white;
+	opacity: .8;
+	
+	width: 100%;
+	height: 100%;
+	border: 4px solid gray;
+	padding: 20px;
+	
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+.button {
+/*	float: right;
+	display: block;
+	background-color: white;
+	position: relative;
+	height: 35px;
+	width: 135px;
+	
+	text-align: center;
+	margin-right: 15px;
+	
+	font-family: sans-serif;
+	line-height: 35px;
+	
+	cursor: pointer;
+	-moz-border-radius: 0 0 5px 5px;*/
+}
