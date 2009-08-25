@@ -9,36 +9,6 @@
 	<script type="text/javascript" src="javascripts/jquery-1.3.2.js"></script>
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){
-					
-			$('#homebutton').click(function(){
-				// $('#contact').hide();
-				// $('#applications').hide();
-				// $('#home').fadeIn('slow');
-			}).mouseover(function(){
-				$('#homebutton').css({'background-color': '#37b6e4'});
-			}).mouseout(function(){
-				$('#homebutton').css({'background-color': '#ffffff'});
-			});
-			
-			$('#contactbutton').click(function(){
-				// $('#home').hide();
-				// $('#applications').hide();
-				// $('#contact').fadeIn('slow');
-			}).mouseover(function(){
-				$('#contactbutton').css({'background-color': '#37b6e4'});
-			}).mouseout(function(){
-				$('#contactbutton').css({'background-color': '#ffffff'});
-			});
-			
-			$('#applicationsbutton').click(function(){
-				// $('#home').hide();
-				// $('#contact').hide();
-				// $('#applications').fadeIn('slow');
-			}).mouseover(function(){
-				$('#applicationsbutton').css({'background-color': '#37b6e4'});
-			}).mouseout(function(){
-				$('#applicationsbutton').css({'background-color': '#ffffff'});
-			});
 			
 		});
 	</script>
@@ -62,9 +32,22 @@
 <div id="banner">
 	<img src="http://marco.calit2.uci.edu/assets/telios.calit2.uci.edu/images/teliosbanner.png" />
 </div>
+<div id="menu">
+	<p>
+		<a class="nav" href="index.html">Home</a>
+		<a class="nav" href="applications.html">Applications</a>
+		<a class="nav" href="deployments.html">Deployments</a>
+		<a class="nav" href="people.html">People</a>
+		<a class="nav" href="join.html">Join</a>
+		<a class="nav" href="research.html">Research</a>
+		<a class="nav" href="acknowledgements.html">Acknowledgements</a>
+		<a class="nav" href="help.html">Help</a>
+	</p>
+</div>
 <div id="main">
 	<!--Screens-->
-	<div class="screen" id="home">
+	<div class="screen">
+		<h1>Telios</h1>
 		<h2>Telepresence Interactive Operating System</h1>
 		<p>Calit2@UCI researchers are developing Telios (Telepresence Interactive Operating System) 
 		– a software package that transforms computers, laptops and personal computing devices 

@@ -6,7 +6,15 @@ body {
 	background-position: bottom;
 }
 
+h1 {
+	font-family: arial;
+}
+
 h2 {
+	font-family: arial;
+}
+
+h3 {
 	font-family: arial;
 }
 
@@ -16,6 +24,37 @@ p {
 
 li {
 	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #37b6e4;
+}
+
+a:hover {
+	color: gray;
+}
+
+#menu {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	top: 210px;
+	left: 0px;
+	line-height: 0px;
+	text-align: center;
+	background-color: black;
+	opacity: .65;
+}
+
+a.nav {
+	color: #ffffff;
+	text-decoration: none;
+	margin: 10px;
+}
+
+a.nav:hover {
+	color: #37b6e4;
 }
 
 #banner {
@@ -31,17 +70,17 @@ li {
 	position: absolute;
 	width: 700px;
 	left: 50%;
-	top: 220px;
+	top: 250px;
 	margin-left: -370px;
 }
 
 .screen {
 	background-color: white;
-	opacity: .8;
+	color: #505050;
 	
 	width: 100%;
 	height: 100%;
-	border: 4px solid gray;
+	border: 4px solid #606060;
 	padding: 20px;
 	
 	-moz-border-radius: 20px;
