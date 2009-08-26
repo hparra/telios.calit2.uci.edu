@@ -22,11 +22,17 @@ p {
 	font-family: sans-serif;
 }
 
+ul {
+	list-style-type: none;
+}
+
 li {
+	list-style-type: none;
 	font-family: sans-serif;
 }
 
 a {
+	font-family: sans-serif;
 	text-decoration: none;
 	color: #37b6e4;
 }
@@ -41,13 +47,14 @@ a:hover {
 	height: 30px;
 	top: 210px;
 	left: 0px;
-	line-height: 0px;
+	line-height: 30px;
 	text-align: center;
 	background-color: black;
 	opacity: .65;
 }
 
 a.nav {
+	font-family: sans-serif;
 	color: #ffffff;
 	text-decoration: none;
 	margin: 10px;
@@ -87,20 +94,19 @@ a.nav:hover {
 	-webkit-border-radius: 20px;
 }
 
-.button {
-/*	float: right;
-	display: block;
-	background-color: white;
-	position: relative;
-	height: 35px;
-	width: 135px;
-	
-	text-align: center;
-	margin-right: 15px;
-	
-	font-family: sans-serif;
-	line-height: 35px;
-	
-	cursor: pointer;
-	-moz-border-radius: 0 0 5px 5px;*/
+.contactBar {
+	width: 100%;
+	height: 130px;
+}
+
+.contactLeft {
+	float: left;
+	width: 20%;
+	height: 125px;
+}
+
+.contactRight {
+	float: left;
+	width: 80%;
+	height: 125px;
 }
