@@ -94,19 +94,25 @@ a.nav:hover {
 	-webkit-border-radius: 20px;
 }
 
-.contactBar {
+.contact {
 	width: 100%;
 	height: 130px;
 }
 
-.contactLeft {
+.contactImage {
 	float: left;
 	width: 20%;
 	height: 125px;
 }
 
-.contactRight {
+.contactInfo {
 	float: left;
 	width: 80%;
 	height: 125px;
+}
+
+.headshot {
+	width: 120px;
+	height: 120px;
+	border: 1px solid gray;
 }
