@@ -116,3 +116,8 @@ a.nav:hover {
 	height: 120px;
 	border: 1px solid gray;
 }
+
+.logo {
+	width: 200px;
+	margin-right: 20px;
+}
