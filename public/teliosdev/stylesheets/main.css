@@ -1,0 +1,15 @@
+/* Time & Date */
+#time {
+	float: left;
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+}
+
+#clocktext {
+	color: white
+}
+
+#datetext {
+	
+}
