@@ -49,12 +49,14 @@
 	height: 100%;
 	top: 60px;
 	left: 0px;
+	background: white url(http://marco.calit2.uci.edu/assets/telios.calit2.uci.edu/images/bgbottom.jpg) repeat-x fixed center bottom
 }
 
 /* Google Calendar */
 #calendar {
 	width: 100%;
 	height: 100%;
+	background: white;
 }
 
 /* Twitter */
@@ -76,7 +78,7 @@
 }
 
 .tweetbox1 {
-	background-color: #c0c0c0;
+	background-color: #303030;
 	color: white;
 	font-family: verdana, sans-serif;
 	margin: 10px;
