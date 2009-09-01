@@ -1,15 +1,58 @@
 /* Time & Date */
 #time {
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	top: 0px;
+	left: 0px;
+}
+
+#timeholder {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#date {
 	float: left;
-	background-color: blue;
-	width: 100px;
-	height: 100px;
+	background-color: orange;
+	width: 50%;
+	height: 100%;
+	text-align: left;
+}
+
+#clock {
+	float: left;
+	background-color: red;
+	width: 50%;
+	height: 100%;
+	text-align: right;
 }
 
 #clocktext {
-	color: white
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+	color: white;
+	line-height: 60px;
+	font-size: 48px;
 }
 
 #datetext {
-	
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+	color: white;
+	line-height: 60px;
+	font-size: 48px;
+	padding-left: 10px;
+}
+
+/* Content */
+#content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 60px;
+	left: 0px;
 }

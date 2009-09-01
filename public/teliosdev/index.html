@@ -1,4 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+<!DOCTYPE htm
+l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -15,12 +16,43 @@
 	<script src="http://marco.calit2.uci.edu/H2O/src/js/H2O.Button.js" type="text/javascript" charset="utf-8"></script>
 	<script src="http://marco.calit2.uci.edu/H2O/src/js/H2O.Carousel.js" type="text/javascript" charset="utf-8"></script>
 	
-	<script src="js/clock.js" type="text/javascript" charset="utf-8"></script>
-	<script src="javascripts/screensaver.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/clock.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/twitterajax.js" type="text/javascript" charset="utf-8"></script>
 	
 	<script type="text/javascript" charset="utf-8">
+		function contentResize() {
+			$('#content').css({
+				position: 'absolute',
+				height: document.body.clientHeight - 60 + 'px',
+				width: '100%',
+				left: 0 + 'px',
+				top: 60 + 'px'
+			});
+		}
+		
+		$(window).resize(function() {
+			contentResize();
+		});
+		
 		$(document).ready(function() {
+			contentResize();
 			
+			main = H2O.Carousel({ 
+				ID: 'mainscroll', 
+				data: '', 
+				columnAmt: 1, 
+				rowAmt: 1, 
+				autoScroll: true 
+			});
+			$('#content').append(main);
+			
+			main.addToCarousel(document.getElementById('calendar'));
+			//main.addToCarousel(document.getElementById('twitter'));
+			
+			//clock = H2O.Label({ text: " ", id: 'clocktext' });
+			//$('#clock').append(clock);
+			//date = H2O.Label({ text: " ", id: 'datetext' });
+			//$('#date').append(date);
 		});
 	</script>
 </head>
@@ -28,12 +60,24 @@
 <body>
 
 <div id="time">
-	<div id="clocktext">
-		
+	<div id="timeholder">
+		<div id="date">
+			<div id="datetext"></div>
+		</div>
+		<div id="clock">
+			<div id="clocktext"></div>
+		</div>
 	</div>
-	<div id="datetext">
-		
-	</div>
+</div>
+
+<div id="content"></div>
+
+<div id="calendar">
+	<iframe src="http://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=58c54070jqogm4s7nvr8gm4h5k%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div id="twitter">
+
 </div>
 
 </body>
