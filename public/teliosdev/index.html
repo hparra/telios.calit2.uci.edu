@@ -15,7 +15,8 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<script src="http://marco.calit2.uci.edu/H2O/src/js/H2O.Image.js" type="text/javascript" charset="utf-8"></script>
 	<script src="http://marco.calit2.uci.edu/H2O/src/js/H2O.Button.js" type="text/javascript" charset="utf-8"></script>
 	<script src="http://marco.calit2.uci.edu/H2O/src/js/H2O.Carousel.js" type="text/javascript" charset="utf-8"></script>
-	
+	<script src="http://marco.calit2.uci.edu/H2O/src/js/H2O.Label.js" type="text/javascript" charset="utf-8"></script>
+		
 	<script src="javascripts/clock.js" type="text/javascript" charset="utf-8"></script>
 	<script src="javascripts/twitterajax.js" type="text/javascript" charset="utf-8"></script>
 	
@@ -42,17 +43,15 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 				data: '', 
 				columnAmt: 1, 
 				rowAmt: 1, 
-				autoScroll: true 
+				autoScroll: false 
 			});
 			$('#content').append(main);
 			
 			main.addToCarousel(document.getElementById('calendar'));
-			//main.addToCarousel(document.getElementById('twitter'));
+			main.addToCarousel(document.getElementById('twitter'));
 			
-			//clock = H2O.Label({ text: " ", id: 'clocktext' });
-			//$('#clock').append(clock);
-			//date = H2O.Label({ text: " ", id: 'datetext' });
-			//$('#date').append(date);
+			buildTweets();
+			setInterval('buildTweets()', 60000);
 		});
 	</script>
 </head>
@@ -60,13 +59,11 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 <body>
 
 <div id="time">
-	<div id="timeholder">
-		<div id="date">
-			<div id="datetext"></div>
-		</div>
-		<div id="clock">
-			<div id="clocktext"></div>
-		</div>
+	<div id="date">
+		<div id="datetext"></div>
+	</div>
+	<div id="clock">
+		<div id="clocktext"></div>
 	</div>
 </div>
 

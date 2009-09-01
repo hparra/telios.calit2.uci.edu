@@ -7,12 +7,6 @@
 	left: 0px;
 }
 
-#timeholder {
-	width: 100%;
-	height: 100%;
-	text-align: center;
-}
-
 #date {
 	float: left;
 	background-color: orange;
@@ -55,4 +49,39 @@
 	height: 100%;
 	top: 60px;
 	left: 0px;
+}
+
+/* Google Calendar */
+#calendar {
+	width: 100%;
+	height: 100%;
+}
+
+/* Twitter */
+#twitter {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.tweetbox0 {
+	background-color: gray;
+	color: white;
+	font-family: verdana, sans-serif;
+	margin: 10px;
+	padding: 15px;
+	
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.tweetbox1 {
+	background-color: #c0c0c0;
+	color: white;
+	font-family: verdana, sans-serif;
+	margin: 10px;
+	padding: 10px;
+	
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 }

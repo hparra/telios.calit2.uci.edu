@@ -30,7 +30,7 @@ function fetchTime() {
 	}
 	
 	//$('#clocktext').text(hours+':'+minutes+':'+seconds);
-	$('#clocktext').text(hours + ':' + minutes + ' ' + amorpm);
+	$('#clocktext').html(hours + ':' + minutes + ' ' + amorpm);
 	fetchDate();
 }
 
