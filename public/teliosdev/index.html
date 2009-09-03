@@ -47,7 +47,7 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 				scrollDelay: 10000, 
 			});
 			$('#content').append(main);
-			
+			console.log(main);
 			main.addToCarousel(document.getElementById('calendar'));
 			main.addToCarousel(document.getElementById('twitter'));
 			
@@ -55,9 +55,9 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 			// back = H2O.Button({ ID: 'buttonb' , type: 'back', click: main.prevPage() });
 			// $('#nbutton').append(next);
 			// $('#bbutton').append(back);
-			
+
 			buildTweets();
-			setInterval('updateTweets()', 1000);
+			setInterval('updateTweets()', 60000);
 		});
 	</script>
 </head>
