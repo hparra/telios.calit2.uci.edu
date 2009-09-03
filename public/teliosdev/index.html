@@ -51,8 +51,13 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 			main.addToCarousel(document.getElementById('calendar'));
 			main.addToCarousel(document.getElementById('twitter'));
 			
+			// next = H2O.Button({ ID: 'buttonn' , type: 'next', click: main.nextPage() });
+			// back = H2O.Button({ ID: 'buttonb' , type: 'back', click: main.prevPage() });
+			// $('#nbutton').append(next);
+			// $('#bbutton').append(back);
+			
 			buildTweets();
-			setInterval('buildTweets()', 60000);
+			setInterval('updateTweets()', 1000);
 		});
 	</script>
 </head>
@@ -68,7 +73,12 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	</div>
 </div>
 
-<div id="content"></div>
+
+<div id="content">
+	<!-- <div id="bbutton"></div>
+	<div id="nbutton"></div> -->
+</div>
+
 
 <div id="calendar">
 	<iframe src="http://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=58c54070jqogm4s7nvr8gm4h5k%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="100%" height="100%" frameborder="0" scrolling="no"></iframe>

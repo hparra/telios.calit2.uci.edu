@@ -12,7 +12,6 @@ function restartTimer() {
 
 function initScreenSaver() {
 	clearTimeout(screensaver);
-	i3.StateManager.changeState('screen');
     $('#screen').fadeIn('fast');
 }
 

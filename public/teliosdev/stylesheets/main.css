@@ -1,3 +1,7 @@
+body {
+	background: white url(http://marco.calit2.uci.edu/assets/telios.calit2.uci.edu/images/bgbottom.jpg) repeat-x fixed center bottom
+}
+
 /* Time & Date */
 #time {
 	position: absolute;
@@ -48,9 +52,24 @@
 	width: 100%;
 	height: 100%;
 	top: 60px;
-	left: 0px;
-	background: white url(http://marco.calit2.uci.edu/assets/telios.calit2.uci.edu/images/bgbottom.jpg) repeat-x fixed center bottom
+	left: 5%;
 }
+
+/*#nbutton {
+	position: relative;
+	width: 5%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+#bbutton {
+	position: relative;
+	width: 5%;
+	height: 100%;
+	top: 0px;
+	left: 95%;
+}*/
 
 /* Google Calendar */
 #calendar {
