@@ -85,7 +85,13 @@ body {
 	overflow: hidden;
 }
 
-.tweetbox0 {
+#tweets {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.tweet_type_0 {
 	background-color: gray;
 	color: white;
 	font-family: verdana, sans-serif;
@@ -96,7 +102,7 @@ body {
 	-webkit-border-radius: 10px;
 }
 
-.tweetbox1 {
+.tweet_type_1 {
 	background-color: #303030;
 	color: white;
 	font-family: verdana, sans-serif;
