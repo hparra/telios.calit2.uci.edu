@@ -16,6 +16,8 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<script src="http://marco.calit2.uci.edu/H2O/src/js/H2O.Button.js" type="text/javascript" charset="utf-8"></script>
 	<script src="http://marco.calit2.uci.edu/H2O/src/js/H2O.Carousel.js" type="text/javascript" charset="utf-8"></script>
 	<script src="http://marco.calit2.uci.edu/H2O/src/js/H2O.Label.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="http://marco.calit2.uci.edu/conglomo/Axis/AxisCamera.js" type="text/javascript" charset="utf-8"></script>
 		
 	<script src="javascripts/clock.js" type="text/javascript" charset="utf-8"></script>
 	<script src="javascripts/twitterajax.js" type="text/javascript" charset="utf-8"></script>
@@ -51,6 +53,7 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 			main.addToCarousel(document.getElementById('calendar'));
 			main.addToCarousel(document.getElementById('twitter'));
 			main.addToCarousel(document.getElementById('stopwatch'))
+			main.addToCarousel(document.getElementById('camera'))
 			
 			telioslogo = H2O.Image({ id: 'telioslogo', src: 'http://marco.calit2.uci.edu/assets/telios.calit2.uci.edu/images/teliosbanner.png', padding: 0, align: 'center', valign: "middle" });
 			telioslogo.addEventListener("load", function() {
@@ -60,6 +63,9 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 			
 			buildTweets();
 			setInterval(buildTweets, 30000);
+			
+			cam = AxisCamera("rose.calit2.uci.edu", "viewer", "viewer");
+			document.getElementById("camera").appendChild(cam.getMJPGVideo(640, 480));
 		});
 	</script>
 </head>
@@ -78,6 +84,7 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<div id="calendar_button" class="menu_button" onclick="main.jumpToPage(1)">Calendar</div>
 	<div id="twitter_button" class="menu_button" onclick="main.jumpToPage(2)">Twitter</div>
 	<div id="stopwatch_button" class="menu_button" onclick="main.jumpToPage(3)">Stopwatch</div>
+	<div id="camera_button" class="menu_button" onclick="main.jumpToPage(4)">Live Camera</div>
 	
 	<div id="logo"></div>
 </div>
@@ -103,6 +110,9 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<embed src="http://www.online-stopwatch.com/online-stopwatch.swf" width="100%" height="100%">
 	</embed>
 	</object>
+</div>
+
+<div id="camera">
 </div>
 
 </body>
