@@ -6,7 +6,10 @@ set :domain, "telios.calit2.uci.edu"
 set :deploy_to, "/var/www/#{application}"
 set :use_sudo, true
 
-set :user, "hparra" # only Hector can upgrade
+#set :user, "hparra" # only Hector can upgrade
+set(:user) do
+  Capistrano::CLI.ui.ask "Give me a ssh user: "
+end
 
 set :scm, :git
 set :repository,  "git@github.com:hparra/telios.calit2.uci.edu.git"
