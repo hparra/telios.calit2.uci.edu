@@ -90,5 +90,6 @@ function fetchDate() {
 			break;
 	}
 	
-	$('#datetext').text(mon + ' ' + day + suffix);
+	$('#month').text(mon);
+	$('#day').text(day);
 }

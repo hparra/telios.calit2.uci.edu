@@ -24,10 +24,10 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 		function contentResize() {
 			$('#content').css({
 				position: 'absolute',
-				height: document.body.clientHeight - 60 + 'px',
-				width: '100%',
-				left: 0 + 'px',
-				top: 60 + 'px'
+				height: '100%',
+				width: document.body.clientWidth - 250 + 'px',
+				left: 250 + 'px',
+				top: 0 + 'px'
 			});
 		}
 		
@@ -66,20 +66,25 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
 <body>
 
-<div id="time">
+<div id="menu">
 	<div id="date">
-		<div id="datetext"></div>
+		<div id="month"></div>
+		<div id="day"></div>
 	</div>
-	<div id="logo"></div>
 	<div id="clock">
 		<div id="clocktext"></div>
 	</div>
+	
+	<div id="calendar_button" class="menu_button" onclick="main.jumpToPage(1)">Calendar</div>
+	<div id="twitter_button" class="menu_button" onclick="main.jumpToPage(2)">Twitter</div>
+	<div id="stopwatch_button" class="menu_button" onclick="main.jumpToPage(3)">Stopwatch</div>
+	
+	<div id="logo"></div>
 </div>
 
 
 <div id="content">
-	<input type="button" onclick="main.prevPage()">
-	<input type="button" onclick="main.nextPage()">
+
 </div>
 
 

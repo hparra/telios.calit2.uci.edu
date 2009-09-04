@@ -3,39 +3,89 @@ body {
 }
 
 /* Time & Date */
-#time {
+#menu {
 	position: absolute;
-	width: 100%;
-	height: 60px;
+	width: 250px;
+	height: 100%;
 	top: 0px;
 	left: 0px;
+	-moz-border-radius: 0 0 20px 0px;
+	-webkit-border-radius: 0 0 20px 0px;
+}
+
+.menu_button {
+	width: 250px;
+	height: 50px;
+	font-family: sans-serif;
+	color: white;
+	font-size: 32px;
+	line-height: 50px;
+	text-align: center;
+	
+	background-color: #808080;
+	margin-top: 10px;
+	
+	-moz-border-radius: 0 5px 25px 0px;
+	-webkit-border-radius: 0 5px 25px 0px;
+}
+
+#calendar_button:hover {
+	width: 260px;
+	background-color: #56c1e8;
+}
+
+#twitter_button:hover {
+	width: 260px;
+	background-color: #56c1e8;
+}
+
+#stopwatch_button:hover {
+	width: 260px;
+	background-color: #56c1e8;
 }
 
 #logo {
-	float: left;
-	background-color: white;
-	width: 20%;
-	height: 100%;
+	position: absolute;
+	top: 90%;
+	width: 100%;
+	height: 10%;
 }
 
 #date {
-	float: left;
 	background-color: orange;
-	width: 40%;
-	height: 100%;
+	width: 100%;
+	height: 200px;
 	text-align: center;
-	-moz-border-radius: 0 0 0 20px;
-	-webkit-border-radius: 0 0 0 20px;
+	-moz-border-radius: 0 0 0 0;
+	-webkit-border-radius: 0 0 0 0;
+}
+
+#month {
+	width: 100%;
+	height: 20%;
+	font-family: sans-serif;
+	color: white;
+	font-size: 36px;
+	padding-bottom: 5px;
+	padding-top: 15px;
+}
+
+#day {
+	width: 100%;
+	height: 80%;
+	font-family: sans-serif;
+	color: white;
+	font-size: 140px;
 }
 
 #clock {
-	float: left;
+	border-top: 3px solid #ff6600;
 	background-color: red;
-	width: 40%;
-	height: 100%;
+	width: 100%;
+	height: 65px;
 	text-align: center;
-	-moz-border-radius: 0 0 20px 0;
-	-webkit-border-radius: 0 0 20px 0;
+	-moz-border-radius: 0 0 25px 0px;
+	-webkit-border-radius: 0 0 25px 0px;
 }
 
 #clocktext {
@@ -43,18 +93,8 @@ body {
 	height: 100%;
 	font-family: sans-serif;
 	color: white;
-	line-height: 60px;
+	line-height: 65px;
 	font-size: 48px;
-}
-
-#datetext {
-	width: 100%;
-	height: 100%;
-	font-family: sans-serif;
-	color: white;
-	line-height: 60px;
-	font-size: 48px;
-	padding-left: 10px;
 }
 
 /* Content */
@@ -62,8 +102,8 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 60px;
-	left: 5%;
+	top: 0px;
+	left: 250px;
 }
 
 /* Google Calendar */
