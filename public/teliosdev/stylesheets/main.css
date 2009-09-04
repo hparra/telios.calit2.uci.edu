@@ -11,20 +11,31 @@ body {
 	left: 0px;
 }
 
+#logo {
+	float: left;
+	background-color: white;
+	width: 20%;
+	height: 100%;
+}
+
 #date {
 	float: left;
 	background-color: orange;
-	width: 50%;
+	width: 40%;
 	height: 100%;
-	text-align: left;
+	text-align: center;
+	-moz-border-radius: 0 0 0 20px;
+	-webkit-border-radius: 0 0 0 20px;
 }
 
 #clock {
 	float: left;
 	background-color: red;
-	width: 50%;
+	width: 40%;
 	height: 100%;
-	text-align: right;
+	text-align: center;
+	-moz-border-radius: 0 0 20px 0;
+	-webkit-border-radius: 0 0 20px 0;
 }
 
 #clocktext {
@@ -54,22 +65,6 @@ body {
 	top: 60px;
 	left: 5%;
 }
-
-/*#nbutton {
-	position: relative;
-	width: 5%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-}
-
-#bbutton {
-	position: relative;
-	width: 5%;
-	height: 100%;
-	top: 0px;
-	left: 95%;
-}*/
 
 /* Google Calendar */
 #calendar {

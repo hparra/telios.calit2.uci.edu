@@ -47,18 +47,19 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 				scrollDelay: 10000, 
 			});
 			$('#content').append(main);
-			console.log(main);
+			
 			main.addToCarousel(document.getElementById('calendar'));
 			main.addToCarousel(document.getElementById('twitter'));
 			main.addToCarousel(document.getElementById('stopwatch'))
 			
-			// next = H2O.Button({ ID: 'buttonn' , type: 'next', click: main.nextPage() });
-			// back = H2O.Button({ ID: 'buttonb' , type: 'back', click: main.prevPage() });
-			// $('#nbutton').append(next);
-			// $('#bbutton').append(back);
-
-			//buildTweets();
-			//setInterval(buildTweets, 30000);
+			telioslogo = H2O.Image({ id: 'telioslogo', src: 'http://marco.calit2.uci.edu/assets/telios.calit2.uci.edu/images/teliosbanner.png', padding: 0, align: 'center', valign: "middle" });
+			telioslogo.addEventListener("load", function() {
+				$('#logo').append(telioslogo);
+			}, false);
+			telioslogo.load();
+			
+			buildTweets();
+			setInterval(buildTweets, 30000);
 		});
 	</script>
 </head>
@@ -69,6 +70,7 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<div id="date">
 		<div id="datetext"></div>
 	</div>
+	<div id="logo"></div>
 	<div id="clock">
 		<div id="clocktext"></div>
 	</div>
@@ -76,8 +78,8 @@ l PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
 
 <div id="content">
-	<!-- <div id="bbutton"></div>
-	<div id="nbutton"></div> -->
+	<input type="button" onclick="main.prevPage()">
+	<input type="button" onclick="main.nextPage()">
 </div>
 
 

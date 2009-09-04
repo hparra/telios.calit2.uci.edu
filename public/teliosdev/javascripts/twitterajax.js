@@ -1,8 +1,8 @@
 
 function buildTweets() {
-	$.getJSON("http://teliosdev:hboxrocks@twitter.com/statuses/user_timeline/teliosdev.json?count=10&format=json&callback=?", function(data, textStatus) {
+	$.getJSON("http://teliosdev:hboxrocks@twitter.com/statuses/user_timeline/teliosdev.json?count=10&format=json&callback=?", function(data) {
 		$('#tweets').html("");
-		for(i = 0; i < data.length; i = i + 1) {
+		for(var i = 0; i < data.length; i = i + 1) {
 			tweet = data[i].text;
 			tweet_box = document.createElement('div');
 			tweet_box.setAttribute('id', 'tweet_' + i);
