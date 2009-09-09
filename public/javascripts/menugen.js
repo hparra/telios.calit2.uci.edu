@@ -15,7 +15,7 @@ var menu = [];
 
 home = document.createElement('a');
 home.setAttribute('class', 'nav');
-home.setAttribute('href', 'home.html');
+home.setAttribute('href', 'index.html');
 home.innerHTML = "Home";
 menu.push(home);
 
