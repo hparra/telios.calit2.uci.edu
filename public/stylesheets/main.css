@@ -49,15 +49,15 @@ a:hover {
 	left: 0px;
 	line-height: 30px;
 	text-align: center;
-	background-color: black;
-	opacity: .65;
+	background-color: #404040;
+	opacity: .8;
 }
 
 a.nav {
 	font-family: sans-serif;
 	color: #ffffff;
 	text-decoration: none;
-	margin: 10px;
+	margin: 8px;
 }
 
 a.nav:hover {
