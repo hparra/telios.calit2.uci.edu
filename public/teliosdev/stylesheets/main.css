@@ -61,20 +61,20 @@ body {
 
 #month {
 	width: 100%;
-	height: 20%;
+	height: 40px;
 	font-family: sans-serif;
 	color: white;
 	font-size: 36px;
-	padding-bottom: 5px;
-	padding-top: 15px;
+	line-height: 40px;
 }
 
 #day {
 	width: 100%;
-	height: 80%;
+	height: 160px;
 	font-family: sans-serif;
 	color: white;
-	font-size: 140px;
+	font-size: 150px;
+	line-height: 160px;
 }
 
 #clock {
