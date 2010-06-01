@@ -2,8 +2,8 @@ default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
 set :application, "telios"
-set :domain, "telios.calit2.uci.edu"
-set :deploy_to, "/var/www/#{application}"
+set :domain, "marco.calit2.uci.edu"
+set :deploy_to, "/var/www/telios"
 set :use_sudo, true
 
 #set :user, "hparra" # only Hector can upgrade
